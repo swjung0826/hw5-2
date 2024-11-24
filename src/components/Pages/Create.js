@@ -15,7 +15,6 @@ const Create = () => {
   const navigate = useNavigate();
 
   const handleCreate = async () => {
-    // 유효성 체크
     if (!name) {
       nameRef.current.focus();
       alert("Name is required");
@@ -52,10 +51,8 @@ const Create = () => {
       setStudentId("");
       setMajor("");
 
-      // 모달을 수동으로 닫기
       document.getElementById("createModalClose").click();
 
-      // 데이터 갱신 후 List 페이지로 이동
       navigate('/List');
     }
   };
@@ -64,7 +61,6 @@ const Create = () => {
     <div className="container mt-5">
       <h3>Create Data</h3>
 
-      {/* 모달 버튼 */}
       <button
         type="button"
         className="btn btn-success"
@@ -74,7 +70,6 @@ const Create = () => {
         Create User
       </button>
 
-      {/* 모달 */}
       <div
         className="modal fade"
         id="createModal"

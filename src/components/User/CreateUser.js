@@ -5,7 +5,7 @@ const CreateUser = () => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate('/Create'); // '/Create' 경로로 이동
+    navigate('/Create'); 
   };
 
   return (

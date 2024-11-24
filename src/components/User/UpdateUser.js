@@ -5,11 +5,10 @@ const UpdateUser = () => {
   const [id, setId] = useState("");
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
-  const navigate = useNavigate(); // useNavigate 훅 사용
+  const navigate = useNavigate();
 
   const handleNavigate = () => {
-    // 사용자 ID를 기반으로 Update 페이지로 이동
-    navigate(`/Update/${id}`); // /Update/:id 경로로 이동
+    navigate(`/Update/${id}`); 
   };
 
   const handleUpdate = async () => {
